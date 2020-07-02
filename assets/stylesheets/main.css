@@ -1,0 +1,24 @@
+body{
+    margin: 0%;
+    padding: 0%;
+     background: url(../images/TileAble\ Halloween\ Background\ 01.png) repeat;
+     background-size: 350%;
+     height: 700px;
+     width: 200000px;
+     overflow-y: hidden;
+     
+     position: relative;
+     
+     
+}
+.char img{
+    position: absolute;
+    height: 200px;
+    left: 700px;
+    top: 460px;
+
+}
+.rotate img{
+    transform:rotateY(180deg); 
+   
+}

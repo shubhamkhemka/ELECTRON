@@ -1,0 +1,63 @@
+*{
+    display: block;
+    background-color : white;
+    color: black;
+}
+.menu{
+    width: 100%;
+    height: 1em;
+    border: 2px solid;
+    border-color: red; 
+    align-items: center; 
+}
+.menu-options{
+    width: 100%;
+    height: 2em;  
+    border: 2px solid;
+    border-color: blue;  
+    align-items: center;
+}
+.formula-bar{
+    width: 100%;
+    height: 4em;
+    border: 2px solid;
+    border-color: green; 
+    display: flex; 
+    align-items: center;
+}
+.formula-bar input{
+    display: flex;
+    background-color: white;
+    height: 2em;
+    color: black;
+    
+    
+
+
+}
+.cell-container{
+    color: black;
+    border: 2px solid black;
+    width: 100%;
+    height: 100vh;
+  
+    background-color: #38A9DA;
+   overflow: scroll;
+   
+}  
+.sheets{
+    width: 100%;
+   
+    border: 2px solid;
+    border-color: white; 
+
+    
+}
+.row{
+    display: flex;
+}
+.col{
+    height:25px;
+    border: 1px solid black;
+    min-width: 49px;
+}
