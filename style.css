@@ -1,63 +1,84 @@
+html,body{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* ?? */
 *{
-    display: block;
-    background-color : white;
-    color: black;
+    background-color: white;
+    box-sizing: border-box;
 }
 .menu{
-    width: 100%;
-    height: 1em;
-    border: 2px solid;
-    border-color: red; 
-    align-items: center; 
+    height: 22px;
+    border: 1px solid red;
 }
 .menu-options{
-    width: 100%;
-    height: 2em;  
-    border: 2px solid;
-    border-color: blue;  
-    align-items: center;
+    height: 56px;
+    border: 1px solid green;
+
 }
 .formula-bar{
-    width: 100%;
-    height: 4em;
-    border: 2px solid;
-    border-color: green; 
-    display: flex; 
-    align-items: center;
+    height: 26px;
+    border: 1px solid yellow;
 }
-.formula-bar input{
-    display: flex;
-    background-color: white;
-    height: 2em;
-    color: black;
-    
-    
-
-
-}
+/* Cell Conatiner area */
 .cell-container{
-    color: black;
-    border: 2px solid black;
-    width: 100%;
-    height: 100vh;
-  
-    background-color: #38A9DA;
-   overflow: scroll;
-   
-}  
-.sheets{
-    width: 100%;
-   
-    border: 2px solid;
-    border-color: white; 
-
-    
+    height: calc(100vh - 124px);  
+    overflow: auto;
+    position: relative;
+}
+.top-left-cell{
+    height: 25px;
+    width:25px;
+    background-color: gray;
+    position: absolute;
+}
+.top-row{
+    display: flex;
+    position: absolute;
+    left: 26px;
+    height: 25px;
+    top:0px;
+    background-color: lightgrey;
+    text-align: center; 
+}
+.top-row>.cell{
+    min-width: 87px;
+    border:1px solid ;
+}
+.left-col{
+    position: absolute;
+    top: 25px;
+}
+.left-col>.cell{
+    width:25px;
+    height: 25px;
+background-color: lightgrey ;
+border: 1px solid;
 }
 .row{
-    display: flex;
+    display: flex; 
+ }
+.grid{
+    position: absolute;
+    top: 25px;
+    left: 26px;
 }
-.col{
-    height:25px;
-    border: 1px solid black;
+.row>.cell{
+    min-width: 87px;
+    border: 1px solid teal;
+    text-align: center;
+min-height: 25px;
+}
+/* .col{
+    height: 25px;
+    border: 1px solid;
     min-width: 49px;
+} */
+
+/* *************sheets area********** */
+.sheets{
+    height: 20px;
+    border: 1px solid darkslategrey;
+
 }
